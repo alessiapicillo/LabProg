@@ -10,6 +10,7 @@
 class User {
 public:
     User();
+    User(const std::string& name);
 
 private:
     std::string name;

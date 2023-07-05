@@ -8,3 +8,7 @@
 User::User() {
     name = "";
 }
+
+User::User(const std::string &name) {
+    this->name = name;
+}
