@@ -11,3 +11,11 @@ Message::Message() {
 Message::Message(const std::string &text) {
     this->text=text;
 }
+
+std::string Message::getText() const {
+    return text;
+}
+
+void Message::setText(const std::string &text) {
+    this->text = text;
+}

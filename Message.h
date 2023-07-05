@@ -11,6 +11,8 @@ class Message {
 public:
     Message();
     Message(const std::string& text);
+    std::string getText() const;
+    void setText(const std::string& text);
 
 private:
     std::string text;
