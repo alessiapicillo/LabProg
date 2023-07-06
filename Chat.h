@@ -11,6 +11,10 @@ class Chat {
 public:
     Chat();
     Chat(const User& user1, const User& user2);
+    User getUser1() const;
+    void setUser1 (const User& user1);
+    User getUser2() const;
+    void setUser2 (const User& user2);
 
 private:
     User user1;
