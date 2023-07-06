@@ -3,3 +3,16 @@
 //
 
 #include "ChatRegister.h"
+
+ChatRegister::ChatRegister(){
+    chats={};
+}
+
+ChatRegister::ChatRegister(const std::vector<Chat>& chats){
+    this->chats = chats;
+}
+
+
+ChatRegister::~ChatRegister() {
+chats.clear();
+}

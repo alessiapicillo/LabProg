@@ -10,7 +10,13 @@
 #include <iostream>
 
 class ChatRegister {
+public:
+    ChatRegister();
+    ChatRegister(const std::vector<Chat>& chats);
+    ~ChatRegister();
 
+private:
+    std::vector<Chat> chats;
 };
 
 
