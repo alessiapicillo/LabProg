@@ -35,3 +35,8 @@ int Chat:: getNumMessages () const{
 void Chat:: setNumMessages (int size){
     this->numMessages = size;
 }
+
+void Chat:: addMessage (const Message& message){
+    messages.push_back(message);
+    numMessages++;
+}
