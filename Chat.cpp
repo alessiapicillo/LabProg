@@ -40,3 +40,11 @@ void Chat:: addMessage (const Message& message){
     messages.push_back(message);
     numMessages++;
 }
+
+std::list<Message> Chat:: getMessages() const{
+    return messages;
+}
+
+void Chat:: setMessages (const std::list<Message>& mess){
+    this->messages = mess;
+}

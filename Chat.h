@@ -20,6 +20,8 @@ public:
     int getNumMessages () const;
     void setNumMessages (int numMessages);
     void addMessage (const Message& message);
+    std::list<Message> getMessages() const;
+    void setMessages (const std::list<Message>& mess);
 
 private:
     User user1;
