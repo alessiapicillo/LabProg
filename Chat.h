@@ -15,6 +15,7 @@ public:
 private:
     User user1;
     User user2;
+    int numMessages;
 };
 
 
