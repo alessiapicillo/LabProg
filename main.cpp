@@ -10,5 +10,15 @@
 
 int main() {
 User user1("Alessia");
-User user2("Marco");
+User user2("Matteo");
+std::list<Message> messages;
+Chat chat1 (user1, user2);
+messages.push_back(Message("Ciao Matteo", user1, user2));
+messages.push_back(Message("Ciao Ale", user2, user1));
+messages.push_back(Message("Come stai?", user1, user2));
+messages.push_back(Message("Bene, tu?", user2, user1));
+messages.push_back(Message("Bene grazie", user1, user2));
+chat1.setMessages(messages);
+chat1.printMessages();
+return 0;
 }
