@@ -10,7 +10,7 @@
 class Chat {
 public:
     Chat();
-    Chat(User& user1, User& user2);
+    Chat(const User& user1, const User& user2);
 
 private:
     User user1;
