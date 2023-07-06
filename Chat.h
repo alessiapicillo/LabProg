@@ -5,7 +5,9 @@
 #ifndef LABPROG_CHAT_H
 #define LABPROG_CHAT_H
 #include "User.h"
+#include "Message.h"
 #include <iostream>
+#include <list>
 
 class Chat {
 public:
@@ -22,6 +24,7 @@ private:
     User user1;
     User user2;
     int numMessages;
+    std::list<Message> messages;
 };
 
 
