@@ -24,3 +24,7 @@ std::vector<Chat> ChatRegister::getChats() const{
 void ChatRegister::setChats(const std::vector<Chat>& chats){
     this->chats = chats;
 }
+
+void ChatRegister::addChat (const Chat& chat){
+    chats.push_back(chat);
+}
