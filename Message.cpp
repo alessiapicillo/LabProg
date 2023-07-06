@@ -21,3 +21,19 @@ std::string Message::getText() const {
 void Message::setText(const std::string &text) {
     this->text = text;
 }
+
+User Message:: getSender() const{
+    return sender;
+}
+
+void Message:: setSender(const User& sender){
+    this->sender = sender;
+}
+
+User Message:: getReceiver () const{
+    return receiver;
+}
+
+void Message:: setReceiver (const User& receiver){
+    this->receiver = receiver;
+}
