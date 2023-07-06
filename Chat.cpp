@@ -27,3 +27,11 @@ User Chat:: getUser2() const{
 void Chat:: setUser2 (const User& user2){
     this->user2 = user2;
 }
+
+int Chat:: getNumMessages () const{
+    return numMessages;
+}
+
+void Chat:: setNumMessages (int size){
+    this->numMessages = size;
+}

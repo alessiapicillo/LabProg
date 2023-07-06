@@ -15,6 +15,8 @@ public:
     void setUser1 (const User& user1);
     User getUser2() const;
     void setUser2 (const User& user2);
+    int getNumMessages () const;
+    void setNumMessages (int numMessages);
 
 private:
     User user1;
