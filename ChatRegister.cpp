@@ -28,3 +28,10 @@ void ChatRegister::setChats(const std::vector<Chat>& chats){
 void ChatRegister::addChat (const Chat& chat){
     chats.push_back(chat);
 }
+
+void ChatRegister::printChats() const{
+    for(int i=0; i<chats.size(); i++){
+        std::cout << "Chat " << i+1 << std::endl;
+        chats[i].printMessages();
+    }
+}
