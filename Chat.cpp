@@ -47,4 +47,5 @@ std::list<Message> Chat:: getMessages() const{
 
 void Chat:: setMessages (const std::list<Message>& mess){
     this->messages = mess;
+    numMessages = mess.size();
 }
