@@ -49,3 +49,11 @@ void Chat:: setMessages (const std::list<Message>& mess){
     this->messages = mess;
     numMessages = mess.size();
 }
+
+void Chat::printMessages() const{
+    std::cout << "Numero messaggi: " << numMessages << std::endl;
+    std::cout << "Stampa messaggi: " << std::endl;
+    for(const auto& m : messages){
+        std::cout << m.getSender().getName() << ": " << m.getText() << std::endl;
+    }
+}

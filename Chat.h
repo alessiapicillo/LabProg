@@ -22,6 +22,7 @@ public:
     void addMessage (const Message& message);
     std::list<Message> getMessages() const;
     void setMessages (const std::list<Message>& mess);
+    void printMessages() const;
 
 private:
     User user1;
