@@ -8,8 +8,10 @@ Message::Message() {
     text = "";
 }
 
-Message::Message(const std::string &text) {
+Message::Message(const std::string &text, const User& sender, const User& receiver) {
     this->text=text;
+    this->sender=sender;
+    this->receiver=receiver;
 }
 
 std::string Message::getText() const {

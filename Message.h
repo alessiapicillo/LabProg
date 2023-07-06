@@ -10,12 +10,14 @@
 class Message {
 public:
     Message();
-    Message(const std::string& text);
+    Message(const std::string& text, const User& sender, const User& receiver);
     std::string getText() const;
     void setText(const std::string& text);
 
 private:
     std::string text;
+    User sender;
+    User receiver;
 };
 
 
