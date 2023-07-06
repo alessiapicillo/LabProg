@@ -16,3 +16,11 @@ ChatRegister::ChatRegister(const std::vector<Chat>& chats){
 ChatRegister::~ChatRegister() {
 chats.clear();
 }
+
+std::vector<Chat> ChatRegister::getChats() const{
+    return chats;
+}
+
+void ChatRegister::setChats(const std::vector<Chat>& chats){
+    this->chats = chats;
+}

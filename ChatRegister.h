@@ -14,6 +14,8 @@ public:
     ChatRegister();
     ChatRegister(const std::vector<Chat>& chats);
     ~ChatRegister();
+    std::vector<Chat> getChats() const;
+    void setChats(const std::vector<Chat>& chats);
 
 private:
     std::vector<Chat> chats;
