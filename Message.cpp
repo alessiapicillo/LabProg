@@ -4,10 +4,6 @@
 
 #include "Message.h"
 
-Message::Message() {
-    text = "";
-}
-
 Message::Message(const std::string &text, const User& sender, const User& receiver) {
     this->text=text;
     this->sender=sender;
